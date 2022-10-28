@@ -1,15 +1,13 @@
 package iterator
 
-class BookShelf(maxsize: Int) extends Aggregate[Book] {
-  private val books = new Array[Book](maxsize)
-  private var last = 0
+import java.util
 
-  def getBookAt(index: Int): Book = books(index)
-  def appendBook(book: Book): Unit = {
-    books(last) = book
-    last += 1
-  }
-  def getLength(): Int = last
+class BookShelf(initialSize: Int) extends Aggregate[Book] {
+  private val books = new util.ArrayList[Book](initialSize)
 
-  override def iterator() = new BookShelfIterator(this)
+  def getBookAt(index: Int): Book = books.get(index)
+  def appendBook(book: Book): Unit = books.add(book)
+  def getLength(): Int = books.size()
+
+  override def iterator(): Iterator[Book] = new BookShelfIterator(this)
 }
