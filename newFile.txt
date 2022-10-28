@@ -1,0 +1,5 @@
+#written by FileProperties
+#Fri Oct 28 15:41:42 JST 2022
+day=21
+year=2004
+month=4
