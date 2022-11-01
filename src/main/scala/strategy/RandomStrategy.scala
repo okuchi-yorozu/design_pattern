@@ -1,4 +1,4 @@
-package sterategy
+package strategy
 
 import scala.util.Random
 

@@ -1,4 +1,4 @@
-package sterategy
+package strategy
 
 trait Strategy {
   def nextHand(): Hand

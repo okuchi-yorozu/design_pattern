@@ -1,4 +1,4 @@
-package sterategy
+package strategy
 
 class Hand(private val handvalue: Int) {
   def isStrongerThan(h: Hand): Boolean = fight(h) == 1

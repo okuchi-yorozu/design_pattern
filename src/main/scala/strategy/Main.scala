@@ -1,4 +1,4 @@
-package sterategy
+package strategy
 
 object Main {
   def main(args: Array[String]): Unit = {

@@ -1,4 +1,4 @@
-package sterategy
+package strategy
 
 class Player(private val name: String, private val strategy: Strategy) {
   private var wincount: Int = 0
