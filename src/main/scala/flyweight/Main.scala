@@ -11,6 +11,7 @@ object Main {
 
     val bs = new BigString(args(0))
     bs.print()
+    showMemory()
   }
 
   def showMemory(): Unit = {
